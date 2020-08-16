@@ -1,90 +1,75 @@
 /* --------------- Fonts ------------------ */
 @font-face {
-  font-family: 'RobotoLight';
-  src:  url("../fonts/Roboto-Light/Roboto-Light.eot");
-  src:  url("../fonts/Roboto-Light/Roboto-Light.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Roboto-Light/Roboto-Light.woff") format("woff"),
-        url("../fonts/Roboto-Light/Roboto-Light.ttf") format("truetype"),
-        url('../fonts/Roboto-Light/Roboto-Light.svg#RobotoLight') format('svg');
-  font-style: normal;
-  font-weight: 300;
-}
-@font-face {
-  font-family: 'RobotoRegular';
-  src:  url("../fonts/Roboto-Regular/Roboto-Regular.eot");
-  src:  url("../fonts/Roboto-Regular/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Roboto-Regular/Roboto-Regular.woff") format("woff"),
-        url("../fonts/Roboto-Regular/Roboto-Regular.ttf") format("truetype"),
-        url('../fonts/Roboto-Regular/Roboto-Regular.svg#RobotoRegular') format('svg');
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'RobotoMedium';
-  src:  url("../fonts/Roboto-Medium/Roboto-Medium.eot");
-  src:  url("../fonts/Roboto-Medium/Roboto-Medium.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Roboto-Medium/Roboto-Medium.woff") format("woff"),
-        url("../fonts/Roboto-Medium/Roboto-Medium.ttf") format("truetype"),
-        url('../fonts/Roboto-Medium/Robot-Medium.svg#RobotoMedium') format('svg');
-  font-style: normal;
-  font-weight: 500;
-}
-@font-face {
-  font-family: 'RobotoBold';
-  src:  url("../fonts/Roboto-Bold/Roboto-Bold.eot");
-  src:  url("../fonts/Roboto-Bold/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Roboto-Bold/Roboto-Bold.woff") format("woff"),
-        url("../fonts/Roboto-Bold/Roboto-Bold.ttf") format("truetype"),
-        url('../fonts/Roboto-Bold/Robot-Bold.svg#RobotoBold') format('svg');
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'RobotoBlack';
-  src:  url("../fonts/Roboto-Black/Roboto-Black.eot");
-  src:  url("../fonts/Roboto-Black/Roboto-Black.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Roboto-Black/Roboto-Black.woff") format("woff"),
-        url("../fonts/Roboto-Black/Roboto-Black.ttf") format("truetype"),
-        url('../fonts/Roboto-Black/Robot-Black.svg#RobotoBlack') format('svg');
-  font-style: normal;
-  font-weight: 900;
-}
-@font-face {
-  font-family: 'PlayRegular';
-  src:  url("../fonts/Play-Regular/Play-Regular.eot");
-  src:  url("../fonts/Play-Regular/Play-Regular.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Play-Regular/Play-Regular.woff") format("woff"),
-        url("../fonts/Play-Regular/Play-Regular.ttf") format("truetype"),
-        url('../fonts/Play-Regular.svg#PlayRegular') format('svg');
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'PlayBold';
-  src:  url("../fonts/Play-Bold/Play-Bold.eot");
-  src:  url("../fonts/Play-Bold/Play-Bold.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Play-Bold/Play-Bold.woff") format("woff"),
-        url("../fonts/Play-Bold/Play-Bold.ttf") format("truetype"),
-        url('../fonts/Play-Bold.svg#PlayBold') format('svg');
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'UniSans';
-  src:  url("../fonts/uniSansHeavyCaps/UniSansHeavyCAPS.eot");
-  src:  url("../fonts/uniSansHeavyCaps/UniSansHeavyCAPS.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/Play-Bold/Play-Bold.woff") format("woff"),
-        url("../fonts/uniSansHeavyCaps/UniSansHeavyCAPS.ttf") format("truetype"),
-        url('../fonts/uniSansHeavyCaps/UniSansHeavyCAPS.svg#UniSansHeavyCAPS') format('svg');
-  font-style: normal;
+  font-family: 'BigJohn';
+  src        : url("../fonts/Big-John/BigJohn.eot");
+  src        : url("../fonts/Big-John/BigJohn.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Big-John/BigJohn.woff") format("woff"),
+    url("../fonts/Big-John/BigJohn.ttf") format("truetype"),
+    url('../fonts/Big-John/BigJohn.svg#BigJohn') format('svg');
+  font-style : normal;
   font-weight: 400;
 }
 
 @font-face {
+  font-family: 'OpenRegular';
+  src        : url("../fonts/OpenSans-Regular/OpenSans-Regular.eot");
+  src        : url("../fonts/OpenSans-Regular/OpenSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans-Regular/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular/OpenSans-Regular.ttf") format("truetype"),
+    url('../fonts/OpenSans-Regular/OpenSans-Regular.svg#OpenSansRegular') format('svg');
+  font-style : normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Pretendo';
+  src        : url("../fonts/Pretendo/Pretendo.eot");
+  src        : url("../fonts/Pretendo/Pretendo.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Pretendo/Pretendo.woff") format("woff"),
+    url("../fonts/Pretendo/Pretendo.ttf") format("truetype"),
+    url('../fonts/Pretendo/Pretendo.svg#Pretendo') format('svg');
+  font-style : normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'OpenBold';
+  src        : url("../fonts/OpenSans-Bold/OpenSans-Bold.eot");
+  src        : url("../fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans-Bold/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/OpenSans-Bold/OpenSans-Bold.ttf") format("truetype"),
+    url('../fonts/OpenSans-Bold/OpenSans-Bold.svg#OpenSansBold') format('svg');
+  font-style : normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'SourceLight';
+  src        : url("../fonts/SourceSansPro-Light/SourceSansPro-Light.eot");
+  src        : url("../fonts/SourceSansPro-Light/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SourceSansPro-Light/SourceSansPro-Light.woff") format("woff"),
+    url("../fonts/SourceSansPro-Light/SourceSansPro-Light.ttf") format("truetype"),
+    url('../fonts/SourceSansPro-Light.svg#SourceSansProLight') format('svg');
+  font-style : normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'SourceBlack';
+  src        : url("../fonts/SourceSansPro-Black/SourceSansPro-Black.eot");
+  src        : url("../fonts/SourceSansPro-Black/SourceSansPro-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SourceSansPro-Black/SourceSansPro-Black.woff") format("woff"),
+    url("../fonts/SourceSansPro-Black/SourceSansPro-Black.ttf") format("truetype"),
+    url('../fonts/SourceSansPro-Black.svg#SourceSansProBlack') format('svg');
+  font-style : normal;
+  font-weight: 900;
+}
+
+@font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/Fontawesome/fontawesome-webfont.eot");
-  src: url("../fonts/Fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/Fontawesome/fontawesome-webfont.woff") format("woff"),
-  url("../fonts/Fontawesome/fontawesome-webfont.ttf") format("truetype"),
-  url("../fonts/Fontawesome/fontawesome-webfont.svg#FontAwesome") format("svg");
+  src        : url("../fonts/Fontawesome/fontawesome-webfont.eot");
+  src        : url("../fonts/Fontawesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Fontawesome/fontawesome-webfont.woff") format("woff"),
+    url("../fonts/Fontawesome/fontawesome-webfont.ttf") format("truetype"),
+    url("../fonts/Fontawesome/fontawesome-webfont.svg#FontAwesome") format("svg");
 }

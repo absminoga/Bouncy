@@ -1,22 +1,146 @@
 /* ----------- Media ---------------*/
-@media screen and (max-width: 1200px) {
-}
+@media screen and (max-width: 1200px) {}
 
-@media screen and (max-width: 1100px) {
-}
+@media screen and (max-width: 1100px) {}
 
 @media screen and (max-width: 992px) {
+
+  /*--------Header --------- */
+  .main-header {
+    height  : 110px;
+    position: relative;
+    z-index : 999;
+
+    .main-header-nav {
+      display: none;
+    }
+
+    .hamburger-nav--btn {
+      display: unset;
+      width  : 30px;
+      height : 26px;
+    }
+
+    /*--------Hamburger menu --------- */
+    .hamburger-list--active {
+      position        : absolute;
+      top             : 0;
+      left            : -15px;
+      height          : 100vh;
+      width           : calc(100% + 30px);
+      display         : flex;
+      flex-direction  : column;
+      align-items     : center;
+      justify-content : center;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index         : -1;
+
+      .hamburger-nav-item {
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        a {
+          display      : block;
+          padding      : 8px 10px;
+          border       : 1px solid transparent;
+          border-radius: 20px;
+          font-family  : Pretendo;
+          font-size    : calc(16px + 0.2vw);
+          color        : $white-color;
+          transition   : all 1s ease-in-out;
+
+          &:hover {
+            color    : rgba(28, 168, 138, 1);
+            transform: translateX(20px);
+          }
+
+          &:hover:before {
+            font-family : "Font Awesome 5 Free";
+            font-weight : 700;
+            content     : "\f141";
+            margin-right: 10px;
+          }
+
+          &:hover:after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 700;
+            content    : "\f141";
+            margin-left: 10px;
+          }
+        }
+      }
+    }
   }
 
-@media screen and (max-width: 768px) {
+  /*--------Hamburger button --------- */
+  .hamburger-nav--btn {
+    overflow: hidden;
+
+    #menu_checkbox {
+      width  : 28px;
+      height : 30px;
+      display: none;
+    }
+
+    #menu_label {
+      position: relative;
+      width   : 30px;
+      height  : 26px;
+      display : block;
+
+      &:before,
+      &:after {
+        content         : "";
+        position        : absolute;
+        left            : 0;
+        width           : 100%;
+        height          : 3px;
+        background-color: $white-color;
+        transition      : all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      }
+
+      &:before {
+        top: 0px;
+      }
+
+      &:after {
+        bottom: 0px;
+      }
+
+      span {
+        position        : relative;
+        display         : block;
+        top             : 12px;
+        width           : 100%;
+        height          : 3px;
+        background-color: $white-color;
+        transition      : all 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      }
+    }
+
+    #menu_checkbox:checked+#menu_label>#menu_line {
+      opacity: 0;
+    }
+
+    #menu_checkbox:checked+#menu_label:before {
+      top             : 12px;
+      transform       : rotate(-45deg);
+      background-color: $black-color;
+    }
+
+    #menu_checkbox:checked+#menu_label:after {
+      transform       : rotate(45deg);
+      bottom          : 11px;
+      background-color: $black-color;
+    }
+  }
 }
 
-@media screen and (max-width: 576px) {
-}
+@media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 480px) {
-}
+@media screen and (max-width: 576px) {}
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {}
 
-}
+@media screen and (max-width: 320px) {}

@@ -1,7 +1,7 @@
 //--------- LET variable ----------------
 $minWidth         : 320px;
-$maxWidth         : 1400px;
-$maxWidthContainer: 1140px;
+$maxWidth         : 1370px;
+$maxWidthContainer: 1170px;
 
 // ------- LET Color ---------
 $black-color : rgba(0, 0, 0, 1);
@@ -9,6 +9,7 @@ $white-color : rgba(255, 255, 255, 1);
 $red         : rgba(255, 97, 0, 1);
 $yellow-color: rgba(242, 216, 0, 1);
 $grey-color  : rgba(155, 155, 155, 1);
+$orange      : rgba(255, 128, 0, 1);
 
 // --------- LET Hamburger Menu ----------
 
@@ -95,16 +96,9 @@ time,
 mark,
 audio,
 video {
-  margin : 0;
-  padding: 0;
-  border : 0;
-
-  font: {
-    family: RobotoRegular;
-    weight: 400;
-    size  : 16px;
-  }
-
+  margin            : 0;
+  padding           : 0;
+  border            : 0;
   vertical-align    : baseline;
   -webkit-box-sizing: border-box;
   box-sizing        : border-box;
@@ -129,6 +123,12 @@ section {
 
 body {
   line-height: 1;
+
+  font: {
+    family: OpenRegular;
+    weight: 400;
+    size  : 16px;
+  }
 }
 
 ol,
@@ -175,7 +175,7 @@ input {
   text-decoration: none;
   outline        : none;
   box-sizing     : border-box;
-  color          : rgb(0, 0, 0);
+  color          : $black-color;
 }
 
 .container {
@@ -186,6 +186,7 @@ input {
   max-width     : $maxWidthContainer;
   padding       : 0 15px;
   margin        : 0 auto;
+  z-index       : 999;
 }
 
 .wrapper {
@@ -195,6 +196,7 @@ input {
   justify-content: center;
   flex-wrap      : wrap;
   width          : 100%;
+  max-width      : $maxWidth;
 }
 
 .section {
