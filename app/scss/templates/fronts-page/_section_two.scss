@@ -1,0 +1,57 @@
+/* -------- Section Two style ------------*/
+.aboute_columns {
+   display        : flex;
+   flex-direction : row;
+   flex-wrap      : wrap;
+   align-items    : center;
+   justify-content: flex-start;
+
+
+   .about_title {
+      font: {
+         family: SourceLight;
+         size  : calc(16px + 0.34vw);
+      }
+
+      text-transform: uppercase;
+      color         : rgba(51, 59, 70, 1);
+      margin-bottom :calc(30px + 1.5vw);
+   }
+
+   .about_text {
+      font-family  : OpenRegular;
+      font-size    : 14px;
+      line-height  : 2;
+      margin-bottom: calc(30px + 1.5vw);
+      color        : rgba(129, 134, 142, 1);
+   }
+
+   img {
+      width : 100%;
+      height: auto;
+   }
+}
+
+.aboute_columns:first-child {
+   flex        : 1 1 60%;
+   padding-left: calc(50px + 8vw);
+}
+
+.aboute_columns:last-child {
+   flex        : 1 1 40%;
+   padding-left: calc(50px + 6vw);
+}
+
+.about_btn {
+   overflow: hidden;
+
+   a {
+      display       : block;
+      padding       : 10px calc(20px + 0.8vw);
+      border        : 1px solid rgba(51, 59, 70, 1);
+      border-radius : 20px;
+      color         : rgba(51, 59, 70, 1);
+      cursor        : pointer;
+      text-transform: capitalize;
+   }
+}

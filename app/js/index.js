@@ -6,6 +6,7 @@ class Bounce {
 
 
       this.hamburgerBtn.onclick = () => this.addHamburgerMenu();
+      window.onscroll = () => this.heightHeader();
    }
 
    // -------------- Hamburger Menu -----------
@@ -19,8 +20,11 @@ class Bounce {
             console.log("UNchecked");
          }
       }
-   };
+   }
+   // ----------------- Height header -------------
+   heightHeader() {
 
+   }
 };
 let bounce = new Bounce();
 

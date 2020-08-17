@@ -1,7 +1,7 @@
 //--------- LET variable ----------------
-$minWidth         : 320px;
-$maxWidth         : 1370px;
-$maxWidthContainer: 1170px;
+$minWidth          : 320px;
+$maxWidth          : 1370px;
+$maxWidthContainer : 1170px;
 
 // ------- LET Color ---------
 $black-color : rgba(0, 0, 0, 1);
@@ -123,6 +123,7 @@ section {
 
 body {
   line-height: 1;
+  height     : 100%;
 
   font: {
     family: OpenRegular;
@@ -197,9 +198,11 @@ input {
   flex-wrap      : wrap;
   width          : 100%;
   max-width      : $maxWidth;
+  padding        : calc(30px + 3.24vw) 0;
 }
 
-.section {
+section {
   position: relative;
+  display : flex;
   width   : 100%;
 }

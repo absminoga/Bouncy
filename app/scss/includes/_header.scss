@@ -4,6 +4,7 @@ header {
    position: fixed;
    top     : 0;
    width   : 100%;
+   z-index : 9999;
 
    .container {
       position       : relative;
@@ -16,8 +17,14 @@ header {
 
 .main-header {
    position       : relative;
+   display        : flex;
+   flex-direction : row;
    justify-content: space-between;
    align-items    : center;
+   flex-wrap      : wrap;
+   width          : 100%;
+   max-width      : $maxWidth;
+   height         : 110px;
    z-index        : 999;
 
    .main-header-nav {
@@ -65,7 +72,6 @@ header {
       font-size    : calc(16px + 0.2vw);
       color        : $white-color;
       transition   : border .7s ease-in-out;
-
 
       &:hover {
          border: 1px solid $white-color;

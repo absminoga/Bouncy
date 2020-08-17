@@ -7,9 +7,7 @@
 
   /*--------Header --------- */
   .main-header {
-    height  : 110px;
     position: relative;
-    z-index : 999;
 
     .main-header-nav {
       display: none;
@@ -32,7 +30,7 @@
       flex-direction  : column;
       align-items     : center;
       justify-content : center;
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.5);
       z-index         : -1;
 
       .hamburger-nav-item {
@@ -126,20 +124,29 @@
     #menu_checkbox:checked+#menu_label:before {
       top             : 12px;
       transform       : rotate(-45deg);
-      background-color: $black-color;
+      background-color: $white-color;
     }
 
     #menu_checkbox:checked+#menu_label:after {
       transform       : rotate(45deg);
       bottom          : 11px;
-      background-color: $black-color;
+      background-color: $white-color;
     }
   }
 }
 
 @media screen and (max-width: 768px) {}
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+  .aboute_columns:first-child {
+    flex   : 1 1 100%;
+    padding: 0;
+  }
+
+  .aboute_columns:last-child {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 480px) {}
 
