@@ -1,0 +1,158 @@
+/* -------- Section Three style ------------*/
+.section_three {
+   display         : flex;
+   flex-direction  : row;
+   align-items     : center;
+   justify-content : center;
+   flex-wrap       : wrap;
+   background-color: rgba(243, 243, 243, 1);
+}
+
+.details-title {
+   flex      : 1 1 auto;
+   width     : 100%;
+   text-align: center;
+
+   font: {
+      family: SourceLight;
+      size  : calc(16px + 0.34vw);
+   }
+
+   color         : rgba(51, 59, 70, 1);
+   text-transform: uppercase;
+   margin-bottom :calc(30px + 1vw);
+}
+
+.deteils-description {
+   width        : 50%;
+   font-family  : OpenRegular;
+   font-size    : 14px;
+   line-height  : 2;
+   margin-bottom: calc(30px + 1.5vw);
+   color        : rgba(129, 134, 142, 1);
+   text-align   : center;
+}
+
+.details-block-logo {
+   flex         : 1 1 100%;
+   text-align   : center;
+   margin-bottom: calc(30px + 1.5vw);
+
+   div {
+      display         : inline-block;
+      padding         : calc(12px + 0.3vw);
+      border-radius   : 50%;
+      background-color: rgba(129, 134, 142, 1);
+      transition      : background-color .5s linear;
+      cursor          : pointer;
+
+      &:not(:last-child) {
+         margin-right: calc(25px + 0.4vw);
+      }
+
+      i {
+         font-size: calc(16px + 1vw);
+         color    : $white-color;
+      }
+   }
+
+   .active_tab {
+      background-color: rgba(25, 189, 154, 1);
+   }
+
+}
+
+.deteils-block-text {
+   display       : flex;
+   flex-direction: row;
+   align-items   : flex-start;
+   flex-wrap     : wrap;
+   width         : 100%;
+
+
+   .details-text-title {
+      flex: 1 1 100%;
+
+      font: {
+         family: OpenRegular;
+         size  : calc(16px + 0.4vw);
+      }
+
+      text-transform: capitalize;
+      color         : rgba(70, 70, 70, 1);
+      padding-left  : calc(40px + 1.6vw);
+      margin-bottom : calc(30px + 1.5vw);
+   }
+
+   .details_text {
+      padding    : 0 calc(20px + 1.6vw);
+      color      : rgba(129, 134, 142, 1);
+      line-height: 1.7;
+
+      &:nth-child(2) {
+         flex: 1 1 45%;
+
+         font: {
+            family: OpenRegular;
+            size  : 16px;
+         }
+      }
+
+      &:nth-child(2)>span:first-child {
+         font: {
+            weight: 700;
+            family: OpenBold;
+         }
+
+         color : rgba(25, 189, 154, 1);
+      }
+
+      &:nth-child(2)>span:last-child {
+         font: {
+            weight: 700;
+            family: OpenBold;
+         }
+
+         color : rgba(99, 105, 113, 1);
+      }
+
+      &:last-child {
+         flex: 1 1 55%;
+
+         font: {
+            family: OpenRegular;
+            size  : 14px;
+         }
+      }
+
+      &:last-child>span:first-child,
+      &:last-child>span:last-child {
+         font: {
+            weight: 700;
+            family: OpenBold;
+         }
+
+         color : rgba(99, 105, 113, 1);
+      }
+
+      &:last-child>span:nth-child(2) {
+         font: {
+            weight: 700;
+            family: OpenBold;
+         }
+
+         color : rgba(25, 189, 154, 1);
+      }
+   }
+
+}
+
+.deteils-block-text {
+   display   : none;
+   padding   : 20px;
+   margin-top: -1px;
+}
+
+.deteils-block-text.active {
+   display: flex;
+}

@@ -1,7 +1,7 @@
 //--------- LET variable ----------------
 $minWidth          : 320px;
-$maxWidth          : 1370px;
-$maxWidthContainer : 1170px;
+$maxWidth          : 1170px;
+$maxWidthContainer : 1370px;
 
 // ------- LET Color ---------
 $black-color : rgba(0, 0, 0, 1);
@@ -121,6 +121,10 @@ section {
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1;
   height     : 100%;
@@ -199,6 +203,7 @@ input {
   width          : 100%;
   max-width      : $maxWidth;
   padding        : calc(30px + 3.24vw) 0;
+  margin         : 0 auto;
 }
 
 section {

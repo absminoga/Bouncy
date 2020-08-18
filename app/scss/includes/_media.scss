@@ -146,6 +146,20 @@
   .aboute_columns:last-child {
     display: none;
   }
+
+  .deteils-block-text {
+    .details_text {
+
+      &:nth-child(2),
+      &:last-child {
+        flex: 1 1 100%
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 15px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {}

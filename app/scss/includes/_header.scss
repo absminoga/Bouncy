@@ -41,6 +41,14 @@ header {
    }
 }
 
+.main-header--height {
+   height: 80px;
+}
+
+.header--color {
+   background-color: rgba(0, 0, 0, 0.6);
+}
+
 .main-header-logo {
    cursor     : pointer;
    font-family: BigJohn;
