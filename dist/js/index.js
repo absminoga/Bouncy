@@ -5,12 +5,21 @@ class Bounce {
 
       this.headlineBtn = document.querySelector('.fa-arrow-circle-down');
       this.sectionOne = document.querySelector('.section_one');
+      this.sectionFive = document.querySelector('.section_five');
 
       this.hamburgerBtn = document.querySelector('.hamburger-nav--btn');
       this.hamburgerInput = document.getElementById('menu_checkbox');
       this.hamburgerMenu = document.querySelector('.hamburger-nav-list');
 
-      window.onscroll = () => this.heightHeader();
+      this.circle = document.querySelectorAll(".progress-ring__circle");
+
+      window.onscroll = () => {
+         this.heightHeader();
+         this.progressRing();
+      }
+      this.sectionFive.onscroll = () => {
+         console.log(1);
+      }
 
       this.headlineBtn.onclick = () => this.autoScroll();
       this.hamburgerBtn.onclick = () => this.addHamburgerMenu();
@@ -43,6 +52,22 @@ class Bounce {
       let heightScroll = sectionOne.clientHeight - containerMainHeader.clientHeight
       window.scrollTo(0, heightScroll);
    }
+
+   // ---------------- Progress Ring bar;
+   progressRing() {
+      let box = this.sectionFive.getBoundingClientRect();
+      this.circle.forEach(function (circle) {
+         let radius = circle.r.baseVal.value;
+         let circumference = 2 * Math.PI * radius;
+         circle.style.strokeDasharray = `${circumference} ${circumference}`;
+         circle.style.strokeDashoffset = circumference;
+         if (window.pageYOffset >= (box.top + pageYOffset - 200)) {
+            let percent = circle.dataset.persent;
+            let offset = circumference - percent / 100 * circumference
+            circle.style.strokeDashoffset = offset
+         }
+      })
+   }
 };
 let bounce = new Bounce();
 
@@ -63,3 +88,21 @@ jsTriggers.forEach(function (trigger) {
       content.classList.add('active');
    });
 });
+// ------------------------- Tab Skills ----------------------
+let tabSkills = document.querySelectorAll('.js-tab-skills');
+let jsContents2 = document.querySelectorAll('.tab_content_skills');
+
+tabSkills.forEach(function (event) {
+   event.addEventListener('click', function () {
+      let idTab = this.getAttribute('data-tab'),
+         text = document.querySelector('.tab_content_skills[data-tab="' + idTab + '"]'),
+         activeTabSkills = document.querySelector('.js-tab-skills.active_tab_skills'),
+         activeText = document.querySelector('.tab_content_skills.skills_active');
+      activeTabSkills.classList.remove('active_tab_skills');
+      event.classList.add('active_tab_skills');
+
+      activeText.classList.remove('skills_active');
+      text.classList.add('skills_active');
+   });
+});
+

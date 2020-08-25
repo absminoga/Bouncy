@@ -1,0 +1,282 @@
+/* -------- Section Four style ------------*/
+.section_four {
+   display        : flex;
+   flex-direction : row;
+   align-items    : center;
+   justify-content: center;
+   flex-wrap      : wrap;
+
+   .projects {
+      flex           : 1 1 auto;
+      width          : 100%;
+      display        : flex;
+      flex-direction : row;
+      align-items    : center;
+      justify-content: center;
+      flex-wrap      : wrap;
+
+   }
+
+   .accordion {
+      flex    : 1 1 auto;
+      width   : 100%;
+      height  : $a-height;
+      overflow: hidden;
+      margin  : 0 auto;
+   }
+}
+
+.accordion {
+   ul {
+
+      width       : 100%;
+      display     : table;
+      table-layout: fixed;
+      margin      : 0;
+      padding     : 0;
+
+      li {
+         position      : relative;
+         display       : table-cell;
+         vertical-align: bottom;
+         position      : relative;
+         width         : 33.333%; // 3 into 100
+         height        : $a-height;
+
+         background-repeat  : no-repeat;
+         background-position: center center;
+
+         transition: all 500ms ease;
+
+         div {
+            position: absolute;
+            top     : 0;
+            left    : 0;
+            display : block;
+            overflow: hidden;
+            width   : 100%;
+
+            a {
+               display        : flex;
+               align-items    : center;
+               justify-content: center;
+               height         : $a-height;
+               width          : 100%;
+               position       : relative;
+               z-index        : 3;
+               vertical-align : center;
+               padding        : 15px 20px;
+               box-sizing     : border-box;
+               color          : #fff;
+               text-decoration: none;
+               text-transform : uppercase;
+               font-family    : SourceLight;
+               background     : rgba(0, 0, 0, .5);
+               transition     : all 200ms ease;
+
+               * {
+
+                  opacity    : 1;
+                  margin     : 0;
+                  width      : 100%;
+                  text-align : center;
+                  position   : relative;
+                  z-index    : 5;
+                  font-size  : calc(16px + 0.4vw);
+                  white-space: nowrap;
+                  overflow   : hidden;
+
+                  -webkit-transition: all 400ms ease;
+                  transition        : all 400ms ease;
+
+               }
+
+               h2 {
+
+                  font-family   : Montserrat, sans-serif;
+                  text-overflow : clip;
+                  font-size     : 24px;
+                  text-transform: uppercase;
+                  margin-bottom : 2px;
+
+                  top: $text-offset;
+
+               }
+
+               p {
+
+                  top      : $text-offset;
+                  font-size: 13.5px;
+
+               }
+
+            }
+
+         }
+
+      }
+
+      // Background images
+      li:nth-child(1) {
+         background-image: url('../img/section_four/camera-2598507_1280.jpg');
+      }
+
+      li:nth-child(2) {
+         background-image: url('../img/section_four/paint-2940513_1280.jpg');
+      }
+
+      li:nth-child(3) {
+         background-image: url('../img/section_four/rolls-royce-3366960_1280.jpg');
+      }
+
+      &:hover li,
+      &:focus-within li {
+         width: 25%;
+      }
+
+      li:focus {
+         outline: none;
+      }
+
+      &:hover li:hover,
+      // allow users to tab through active slides
+      li:focus,
+      &:focus-within li:focus {
+         width: 50%;
+
+         a {
+            background: rgba(0, 0, 0, .4);
+
+            * {
+               opacity          : 1;
+               -webkit-transform: translateX(0);
+               transform        : translateX(0);
+            }
+         }
+      }
+
+      &:hover li {
+         width: 25% !important;
+
+         a * {
+            opacity: 1 !important;
+         }
+      }
+
+      &:hover li:hover {
+         width: 50% !important;
+
+         a {
+            background: transparent;
+
+            * {
+               opacity          : 0 !important;
+               -webkit-transform: translateX(0);
+               transform        : translateX(0);
+
+            }
+
+         }
+      }
+
+   }
+}
+
+.projects {
+   text-align: center;
+
+   .projects_title {
+      flex: 1 1 100%;
+
+      font: {
+         family: SourceLight;
+         size  : calc(16px + 0.4vw);
+      }
+
+      color         : rgba(51, 59, 70, 1);
+      text-transform: uppercase;
+      margin-bottom :calc(30px + 1vw);
+
+   }
+
+   .projects_description {
+      flex       : 1 1 100%;
+      width      : 50%;
+      font-family: OpenRegular;
+      font-size  : 14px;
+      line-height: calc(10px + 0, 8vw);
+      color      : rgba(129, 134, 142, 1);
+      text-align : center;
+   }
+}
+
+.projects-submit-block {
+   position           : relative;
+   width              : 100%;
+   padding            : calc(20px + 2vw) 0;
+   background-image   : url(../img/section_four/sneakers-2387899_1920.jpg);
+   background-position: center bottom;
+   z-index            : 1;
+
+   .wrapper {
+      position       : relative;
+      display        : flex;
+      flex-direction : row;
+      justify-content: space-between;
+      padding        : 0 15px;
+
+      font: {
+         family: SourceLight;
+         size  : calc(16px + 0.6vw);
+      }
+
+      color   : $white-color;
+      z-index : 3;
+
+      .projects-submit-text {
+         flex: 1 1 80%;
+
+         span {
+            font-family: SourceBlack;
+         }
+
+      }
+
+      .projects-submit-btn {
+         flex      : 1 1 20%;
+         text-align: center;
+
+         a {
+            display       : inline-block;
+            font-size     : 16px;
+            border        : 1px solid $white-color;
+            border-radius : 20px;
+            padding       : 10px 15px;
+            text-align    : center;
+            color         : $white-color;
+            text-transform: capitalize;
+            cursor        : pointer;
+            transition    : all 0.5s linear;
+
+            &:hover {
+               color           : rgba(25, 189, 154, 1);
+               background-color: $white-color;
+               border          : 1px dashed rgba(25, 189, 154, 1);
+            }
+         }
+
+
+      }
+   }
+
+   .projects-submit-bg {
+      position        : absolute;
+      width           : 100%;
+      height          : 100%;
+      top             : 0;
+      left            : 0;
+      background-color: rgba(25, 189, 154, 1);
+      opacity         : 0.9;
+      z-index         : 2;
+   }
+}

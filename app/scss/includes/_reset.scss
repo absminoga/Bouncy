@@ -2,6 +2,11 @@
 $minWidth          : 320px;
 $maxWidth          : 1170px;
 $maxWidthContainer : 1370px;
+// Accordion Height
+$a-height          : calc(250px + 8vw);
+
+// Position text along bottom
+$text-offset: $a-height - 90;
 
 // ------- LET Color ---------
 $black-color : rgba(0, 0, 0, 1);

@@ -1,14 +1,16 @@
+
+//определим переменные для функцийи плагинов
 const gulp = require('gulp'),
-  sass = require('gulp-sass'),
-  autoprefixer = require('gulp-autoprefixer'),
+  sass = require('gulp-sass'),  //препроцессор
+  autoprefixer = require('gulp-autoprefixer'), //автоматическая расстановка вендорных префиксов
   plumber = require('gulp-plumber'),
   jade = require('gulp-jade'),
   cssnano = require('gulp-cssnano'),
   browserSync = require('browser-sync'),
   cache = require('gulp-cache'),
   changed = require('gulp-changed'),
-  concat = require('gulp-concat'),
-  imageMin = require('gulp-imagemin'),
+  concat = require('gulp-concat'), //склеивает css и js-файлы в один
+  imageMin = require('gulp-imagemin'), //пережимает изображения
   notify = require('gulp-notify'),
   jsUglify = require('gulp-uglify'),
   clean = require('gulp-clean'),
