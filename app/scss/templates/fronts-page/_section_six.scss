@@ -1,0 +1,102 @@
+/* -------- Section six style ------------*/
+.section_six {
+   position           : relative;
+   background         : url(../img/section_six/black_white.png);
+   background-repeat  : no-repeat;
+   background-position: center;
+   background-size    : cover;
+
+
+}
+
+.impressed {
+   position       : relative;
+   display        : flex;
+   flex-direction : row;
+   justify-content: center;
+   align-items    : flex-start;
+   flex-wrap      : wrap;
+   width          : 100%;
+
+   .impressed_block {
+      flex      : 1 1 auto;
+      width     : 50%;
+      box-sizing: border-box;
+   }
+
+   .impressed_mac {
+      position  : relative;
+      top       : -10px;
+      flex      : 1 1 auto;
+      width     : 50%;
+      box-sizing: border-box;
+      text-align: center;
+      padding   : 0 15px;
+
+      img {
+         position : relative;
+         top      : calc((40px + 3.24vw)*-1);
+         min-width: 200px;
+         width    : auto;
+         height   : auto;
+         z-index  : 3;
+      }
+   }
+}
+
+.impressed_block {
+   display        : flex;
+   flex-direction : column;
+   justify-content: center;
+   align-items    : flex-start;
+
+   .impressed-title {
+      font: {
+         family: SourceLight;
+         size  : calc(16px + 0.4vw);
+      }
+
+      color         : rgba(243, 243, 243, 1);
+      text-transform: uppercase;
+      padding-bottom: calc(30px + 1.2vw);
+   }
+
+   .card-impressed {
+      .card-impressed_description {
+         font: {
+            family: OpenRegular;
+            size  : 16px;
+         }
+
+         color        : rgba(178, 179, 179, 1);
+         line-height  : 1.75;
+         text-align   : justify;
+         margin-bottom: calc(22px + 0.8vw);
+      }
+
+      .card-impressed-author {
+         font: {
+            family: OpenBold;
+            size  : 16px;
+         }
+
+         color         : rgba(178, 179, 179, 1);
+         margin-bottom : 15px;
+         text-transform: uppercase;
+      }
+
+      .card-impressed-work {
+         font: {
+            family: OpenRegular;
+            size  : 14px;
+         }
+
+         color         : rgba(178, 179, 179, 1);
+         text-transform: uppercase;
+
+         span {
+            color: rgba(25, 189, 154, 1);
+         }
+      }
+   }
+}

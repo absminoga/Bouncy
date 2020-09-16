@@ -13,32 +13,6 @@
 }
 
 .services {
-   .services-title {
-      flex      : 1 1 auto;
-      width     : 100%;
-      text-align: center;
-
-      font: {
-         family: SourceLight;
-         size  : calc(16px + 0.34vw);
-      }
-
-      color         : rgba(51, 59, 70, 1);
-      text-transform: uppercase;
-      margin-bottom :calc(20px + 1vw);
-   }
-
-   .services-description {
-      flex         : 1 1 auto;
-      width        : 50%;
-      font-family  : OpenRegular;
-      font-size    : 14px;
-      line-height  : 2;
-      margin-bottom: calc(20px + 1.5vw);
-      color        : rgba(129, 134, 142, 1);
-      text-align   : center;
-   }
-
    .services-block-skills {
       flex   : 1 1 auto;
       width  : 100%;

@@ -184,30 +184,6 @@
 
 .projects {
    text-align: center;
-
-   .projects_title {
-      flex: 1 1 100%;
-
-      font: {
-         family: SourceLight;
-         size  : calc(16px + 0.4vw);
-      }
-
-      color         : rgba(51, 59, 70, 1);
-      text-transform: uppercase;
-      margin-bottom :calc(30px + 1vw);
-
-   }
-
-   .projects_description {
-      flex       : 1 1 100%;
-      width      : 50%;
-      font-family: OpenRegular;
-      font-size  : 14px;
-      line-height: calc(10px + 0, 8vw);
-      color      : rgba(129, 134, 142, 1);
-      text-align : center;
-   }
 }
 
 .projects-submit-block {
@@ -261,7 +237,7 @@
             &:hover {
                color           : rgba(25, 189, 154, 1);
                background-color: $white-color;
-               border          : 1px dashed rgba(25, 189, 154, 1);
+               border          : 1px solid rgba(25, 189, 154, 1);
             }
          }
 

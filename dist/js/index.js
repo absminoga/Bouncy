@@ -1,6 +1,7 @@
 class Bounce {
    constructor() {
-      this.containerHeader = document.querySelector('header')
+      this.body = document.querySelector('body');
+      this.containerHeader = document.querySelector('header');
       this.containerMainHeader = document.querySelector('.main-header');
 
       this.headlineBtn = document.querySelector('.fa-arrow-circle-down');
@@ -17,12 +18,12 @@ class Bounce {
          this.heightHeader();
          this.progressRing();
       }
-      this.sectionFive.onscroll = () => {
-         console.log(1);
-      }
 
       this.headlineBtn.onclick = () => this.autoScroll();
-      this.hamburgerBtn.onclick = () => this.addHamburgerMenu();
+      this.hamburgerBtn.onclick = () => {
+         this.addHamburgerMenu();
+         this.scrollBlocking();
+      }
    }
 
    // -------------- Hamburger Menu -----------
@@ -35,6 +36,11 @@ class Bounce {
          }
       }
    }
+   // -------------- Scroll Blocking -----------
+   scrollBlocking() {
+
+   }
+
    // ----------------- Height and background header -------------
    heightHeader() {
       if (window.pageYOffset >= 150) {
@@ -61,7 +67,7 @@ class Bounce {
          let circumference = 2 * Math.PI * radius;
          circle.style.strokeDasharray = `${circumference} ${circumference}`;
          circle.style.strokeDashoffset = circumference;
-         if (window.pageYOffset >= (box.top + pageYOffset - 200)) {
+         if (window.pageYOffset >= (box.top + pageYOffset - 150)) {
             let percent = circle.dataset.persent;
             let offset = circumference - percent / 100 * circumference
             circle.style.strokeDashoffset = offset
@@ -105,4 +111,11 @@ tabSkills.forEach(function (event) {
       text.classList.add('skills_active');
    });
 });
+
+let gridElements = document.querySelectorAll(".grid_item");
+let n = 1;
+for (let gridElement of gridElements) {
+   console.log(gridElement);
+}
+
 
