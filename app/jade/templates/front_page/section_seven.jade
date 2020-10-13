@@ -1,45 +1,45 @@
-//---------------- Section Five ------------
+//---------------- Section Seven ------------
 section.section_seven(id="portfolio")
-	.container
-		.wrapper.portfolio
-			h2.portfolio_title.section_title THE PORTFOLIO
-			.portfolio_descripotion.section_description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-			.portfolio_content.block_portfolio
-				.block_portfolio_tabs
-					ul.portfolio_list
-						li.portfolio_item.active All Works
-						li.portfolio_item Print
-						li.portfolio_item Identity
-						li.portfolio_item Branding
-						li.portfolio_item Web 
-						li.portfolio_item HTML
-						li.portfolio_item Wordpress
-				.block_portfolio_cards
-					mixin portfolio_card(imageName, title, subtitle, className)
-						article(class="#{className}").portfolio_card
-							div(style="background-image: url(../img/section_seven/#{imageName}.png)").portfolio_card_img
-							.card_descriptin.visually_hidden
-								h4.visually_hidden_title #{title}
-								p.visually_hidden_subtitle #{subtitle}
-								.visually_hidden_links
-									.links_container
-										a(href="#")
-											i.fas.fa-link
-									.links_container
-										a(href="#")
-											i.far.fa-heart
-					+portfolio_card("img_1", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "brandin identify web active")
-					+portfolio_card("img_2", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "print wordpress")
-					+portfolio_card("img_3", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "branding print html")
-					+portfolio_card("img_4", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "branding web wordpress")
-					+portfolio_card("img_5", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "branding web html")
-					+portfolio_card("img_6", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "identify web")
-					+portfolio_card("img_7", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "branding identify web")
-					+portfolio_card("img_8", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", " web wordpress html")
-					+portfolio_card("img_9", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "branding identify web")
-					+portfolio_card("img_10", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "branding print wordpress")
-					+portfolio_card("img_11", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "branding identify wed")
-					+portfolio_card("img_12", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "print html")
+   .container
+      .wrapper.portfolio
+         h2.portfolio_title.section_title THE PORTFOLIO
+         .portfolio_descripotion.section_description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+         .portfolio_content.block_portfolio
+            .block_portfolio_tabs
+               ul.portfolio_list
+                  li.portfolio_item.active All Works
+                  li.portfolio_item Print
+                  li.portfolio_item Identity
+                  li.portfolio_item Branding
+                  li.portfolio_item Web 
+                  li.portfolio_item HTML
+                  li.portfolio_item Wordpress
+            .block_portfolio_cards
+               mixin portfolio_card(imageName, title, subtitle, className)
+                  article(class="#{className}").portfolio_card
+                     div(style="background-image: url(../img/section_seven/#{imageName}.png)").portfolio_card_img
+                     .card_descriptin.visually_hidden
+                        h4.visually_hidden_title #{title}
+                        p.visually_hidden_subtitle #{subtitle}
+                        .visually_hidden_links
+                           .links_container
+                              a(href="#")
+                                 i.fas.fa-link
+                           .links_container
+                              a(href="#")
+                                 i.far.fa-heart
+               +portfolio_card("img_1", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "brandin identify web active")
+               +portfolio_card("img_2", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "print wordpress")
+               +portfolio_card("img_3", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "branding print html")
+               +portfolio_card("img_4", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "branding web wordpress")
+               +portfolio_card("img_5", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "branding web html")
+               +portfolio_card("img_6", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "identify web")
+               +portfolio_card("img_7", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "branding identify web")
+               +portfolio_card("img_8", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", " web wordpress html")
+               +portfolio_card("img_9", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "branding identify web")
+               +portfolio_card("img_10", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "branding print wordpress")
+               +portfolio_card("img_11", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "branding identify wed")
+               +portfolio_card("img_12", "Title", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "print html")
 
 
 

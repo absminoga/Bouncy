@@ -1,25 +1,3 @@
-//--------- LET variable ----------------
-$minWidth : 320px;
-$maxWidth : 1170px;
-$maxWidthContainer : 1370px;
-// Accordion Height
-$a-height : calc(250px + 8vw);
-
-// Position text along bottom
-$text-offset: $a-height - 90;
-
-// ------- LET Color ---------
-$black-color : rgba(0, 0, 0, 1);
-$white-color : rgba(255, 255, 255, 1);
-$red : rgba(255, 97, 0, 1);
-$yellow-color: rgba(242, 216, 0, 1);
-$grey-color : rgba(155, 155, 155, 1);
-$orange : rgba(255, 128, 0, 1);
-
-// --------- LET Hamburger Menu ----------
-
-
-
 html,
 body,
 div,
@@ -123,7 +101,6 @@ menu,
 nav,
 section {
   display: block;
-
 }
 
 html {
@@ -133,12 +110,9 @@ html {
 body {
   line-height: 1;
   height: 100%;
-
-  font: {
-    family: OpenRegular;
-    weight: 400;
-    size: 16px;
-  }
+  font-family: OpenRegular;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 ol,
@@ -155,7 +129,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -185,7 +159,7 @@ input {
   text-decoration: none;
   outline: none;
   box-sizing: border-box;
-  color: $black-color;
+  color: black;
 }
 
 .container {
@@ -193,7 +167,7 @@ input {
   flex-direction: row;
   width: 100%;
   height: 100%;
-  max-width: $maxWidthContainer;
+  max-width: 1370px;
   padding: 0 15px;
   margin: 0 auto;
   z-index: 999;
@@ -206,7 +180,7 @@ input {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  max-width: $maxWidth;
+  max-width: 1170px;
   padding: calc(30px + 3.24vw) 0;
   margin: 0 auto;
 }
@@ -223,20 +197,15 @@ section {
   overflow-y: scroll;
 }
 
-// --------- Block style --------------
 .section_title {
   flex: 1 1 auto;
   width: 100%;
   text-align: center;
-
-  font: {
-    family: SourceLight;
-    size: calc(16px + 0.34vw);
-  }
-
-  color : rgba(51, 59, 70, 1);
+  font-family: SourceLight;
+  font-size: calc(16px + 0.34vw);
+  color: #333b46;
   text-transform: uppercase;
-  margin-bottom :calc(20px + 1vw);
+  margin-bottom: calc(20px + 1vw);
 }
 
 .section_description {
@@ -245,6 +214,6 @@ section {
   font-size: 14px;
   line-height: 2;
   margin-bottom: calc(20px + 1.5vw);
-  color: rgba(129, 134, 142, 1);
+  color: #81868e;
   text-align: center;
 }

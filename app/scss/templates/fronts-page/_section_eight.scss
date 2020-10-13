@@ -1,0 +1,106 @@
+/* -------- Section eight style ------------*/
+.team_content {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 100%;
+
+   .block_team_card {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 100%;
+   }
+}
+
+.block_team_card {
+   .member_logo {
+      flex: 1 1 30%;
+      justify-content: center;
+      align-items: center;
+      max-height: 400px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+
+      // img {
+      //    max-height: 400px;
+      // }
+   }
+
+   .member_info {
+      flex: 1 1 70%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: stretch;
+      flex-wrap: wrap;
+      padding: calc(20px + 1vw) calc(30px + 1vw);
+
+      .member_item {
+         width: 60%;
+         text-align: end;
+         margin-bottom: calc(20px + 1vw);
+      }
+
+      .member_name {
+      }
+
+      .member_description {
+         width: 60%;
+         line-height: 1.79;
+      }
+
+      .member_skills {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+      }
+   }
+
+   .member_skills {
+      .skill_block {
+         flex: 1 1 100%;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         margin-bottom: 10px;
+
+         .skill_text,
+         .skill_number {
+            flex: 1 1 50%;
+         }
+
+         .skill_text {
+            text-align: left;
+         }
+
+         .skill_number {
+            text-align: right;
+         }
+      }
+      .container_rang {
+         position: relative;
+         flex: 1 1 100%;
+         width: 100%;
+         background-color: rgba(225, 228, 233, 1);
+         height: 4px;
+         margin-bottom: calc(30px + 1vw);
+         .skill_rang {
+            position: absolute;
+            background-color: rgb(25, 189, 154);
+            height: 4px;
+         }
+         .branding {
+            width: 80%;
+         }
+         .codding {
+            width: 65%;
+         }
+         .interface {
+            width: 75%;
+         }
+      }
+   }
+}

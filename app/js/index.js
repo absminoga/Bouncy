@@ -112,10 +112,9 @@ tabSkills.forEach(function (event) {
    });
 });
 
-let gridElements = document.querySelectorAll(".grid_item");
-let n = 1;
-for (let gridElement of gridElements) {
-   console.log(gridElement);
+let str = '12345';
+console.log(str.codePointAt(2));
+for (let i = 10; i <= 500; i++) {
+   str += String.fromCodePoint(i)
 }
-
-
+console.log(str);
