@@ -111,6 +111,21 @@ tabSkills.forEach(function (event) {
       text.classList.add('skills_active');
    });
 });
+// ------------------------- Swipe slider -------------------------
+var swiper = new Swiper('.swiper-container', {
+   slidesPerView: 1,
+   spaceBetween: 30,
+   loop: true,
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+   },
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+});
+
 
 let str = '12345';
 console.log(str.codePointAt(2));

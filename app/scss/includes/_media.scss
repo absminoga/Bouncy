@@ -295,6 +295,20 @@
     }
   }
 
+  .block_team_card {
+
+    .member_info {
+      flex: 1 1 70%;
+
+      .member_item {
+        width: 90%;
+      }
+
+      .member_description {
+        width: 80%;
+      }
+    }
+  }
 }
 
 
@@ -417,6 +431,36 @@
 
     .impressed_mac {
       display: none;
+    }
+  }
+
+  // Section eight
+  .block_team_card {
+    flex-wrap: wrap;
+
+
+
+    .member_logo {
+      flex: 1 1 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        max-height: calc(300px + 2vw);
+      }
+    }
+
+    .member_info {
+      flex: 1 1 100%;
+
+      .member_item {
+        width: 100%;
+      }
+
+      .member_description {
+        width: 90%;
+      }
     }
   }
 }

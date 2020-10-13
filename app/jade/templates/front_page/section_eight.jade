@@ -4,11 +4,11 @@ section.section_eight(id='team')
       .wrapper.team
          h2.section_title THE PORTFOLIO
          .section_description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-         .team_content.block_team
+         .team_content.block_team.swiper-container
             mixin member_card(imageName, nameFirst, workingPosition, description, skill_1, skill_2, skill_3, skill_number_1, skill_number_2, skill_number_3)
-               .block_team_card.card_member  
-                  .member_logo(style="background-image: url(../img/section_eight/#{imageName}.jpg)")
-                     //- img(src="img/section_eight/#{imageName}.jpg" alt="member_logo")
+               .block_team_card.card_member.swiper-wrapper 
+                  .member_logo
+                     img(src="img/section_eight/#{imageName}.jpg" alt="member_logo")
                   .member_info
                      .member_name.member_item #{nameFirst}
                      .member_position.member_item #{workingPosition}
@@ -30,7 +30,9 @@ section.section_eight(id='team')
                         .container_rang
                            .skill_rang.interface
             +member_card("1", "Abdullah Noman", "Creative Director, Code Cafe", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "BRANDING","Web Design", "User Interface", "80%", "65%", "75%")
-            +member_card("2", "Ibrahim Huttub", "Creative Director, Code Cafe", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "BRANDING","Web Design", "User Interface", "80%", "65%", "75%")
-            +member_card("3", "john Wick", "FullStack Developer, Code Cafe", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "BRANDING","Codding", "User Interface", "70%", "90%", "90%")
-
+            +member_card("2", "Ibrahim Huttub", "Creative Director, Code Cafe", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "BRANDING","Web Design", "User Interface", "90%", "70%", "85%")
+            +member_card("3", "john Wick", "FullStack Developer, Code Cafe", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium", "BRANDING","Codding", "User Interface", "70%", "90%", "50%")
+         .swiper-pagination
+         .swiper-button-next
+         .swiper-button-prev
 

@@ -8,8 +8,8 @@
    .block_team_card {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      align-items: stretch;
+      justify-content: center;
+      align-items: center;
       width: 100%;
    }
 }
@@ -17,16 +17,13 @@
 .block_team_card {
    .member_logo {
       flex: 1 1 30%;
-      justify-content: center;
-      align-items: center;
-      max-height: 400px;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: top center;
 
-      // img {
-      //    max-height: 400px;
-      // }
+      img {
+         max-height: calc(400px + 2vw);
+      }
    }
 
    .member_info {
@@ -45,11 +42,36 @@
       }
 
       .member_name {
+         font: {
+            family: 'OpenRegular';
+            size: calc(16px + 0.5vw);
+         }
+
+         color: #464646;
+      }
+
+      .member_position {
+         font: {
+            family: 'SourceLight';
+            style: italic;
+         }
+
+         text-transform: uppercase;
+         color: rgb(129, 134, 142);
       }
 
       .member_description {
          width: 60%;
+
+         font: {
+            family: 'OpenRegular';
+            size: 14px;
+         }
+
+         color: rgb(129, 134, 142);
          line-height: 1.79;
+
+
       }
 
       .member_skills {
@@ -70,16 +92,27 @@
          .skill_text,
          .skill_number {
             flex: 1 1 50%;
+
+            font: {
+               family: 'SourceLight';
+               size: 16px;
+            }
+
+            color:rgb(129, 134, 142);
          }
 
          .skill_text {
             text-align: left;
+            text-transform: uppercase;
+
+
          }
 
          .skill_number {
             text-align: right;
          }
       }
+
       .container_rang {
          position: relative;
          flex: 1 1 100%;
@@ -87,20 +120,56 @@
          background-color: rgba(225, 228, 233, 1);
          height: 4px;
          margin-bottom: calc(30px + 1vw);
+
          .skill_rang {
             position: absolute;
             background-color: rgb(25, 189, 154);
             height: 4px;
          }
+
          .branding {
             width: 80%;
          }
+
          .codding {
             width: 65%;
          }
+
          .interface {
             width: 75%;
          }
+      }
+   }
+}
+
+.block_team_card:nth-child(2) {
+   .member_info {
+      .branding {
+         width: 90%;
+      }
+
+      .codding {
+         width: 70%;
+      }
+
+      .interface {
+         width: 85%;
+      }
+   }
+}
+
+.block_team_card:nth-child(3) {
+   .member_info {
+      .branding {
+         width: 70%;
+      }
+
+      .codding {
+         width: 90%;
+      }
+
+      .interface {
+         width: 50%;
       }
    }
 }
