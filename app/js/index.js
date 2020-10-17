@@ -112,10 +112,20 @@ tabSkills.forEach(function (event) {
    });
 });
 // ------------------------- Swipe slider -------------------------
-var swiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.swiper-container', {
    slidesPerView: 1,
-   spaceBetween: 30,
-   loop: true,
+   spaceBetween: 1000,
+   mousewheel: true,
+   keyboard: {
+      enabled: true,
+   },
+   effect: 'cube',
+   cubeEffect: {
+      shadow: false,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
+   },
    pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -127,9 +137,13 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 
-let str = '12345';
-console.log(str.codePointAt(2));
-for (let i = 10; i <= 500; i++) {
-   str += String.fromCodePoint(i)
+let string = "Вот, что мне хотелось бы сказать на эту тему:";
+
+function truncate(str, maxlength) {
+   return (str.length > maxlength) ? str.slice(0, maxlength - 1) + "\u2026" : str;
+
 }
-console.log(str);
+
+alert(truncate(string, 20));
+alert(truncate(string, 10));
+alert(truncate(string, 50));

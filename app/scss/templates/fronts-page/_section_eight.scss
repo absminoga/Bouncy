@@ -16,10 +16,16 @@
 
 .block_team_card {
    .member_logo {
-      flex: 1 1 30%;
+      flex: 1 1 35%;
+      display: flex;
+      align-self: stretch;
+      align-items: center;
+      justify-content: center;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: top center;
+      padding-left: 20px;
+
 
       img {
          max-height: calc(400px + 2vw);
@@ -27,7 +33,7 @@
    }
 
    .member_info {
-      flex: 1 1 70%;
+      flex: 1 1 65%;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;

@@ -445,6 +445,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      padding-left: 0px;
+
 
       img {
         max-height: calc(300px + 2vw);
@@ -453,16 +455,30 @@
 
     .member_info {
       flex: 1 1 100%;
+      padding-left: 5px;
+      padding-right: 5px;
 
       .member_item {
         width: 100%;
+        margin-bottom: 15px;
       }
 
       .member_description {
+        display: none;
         width: 90%;
       }
+
+      .member_skills {
+        .container_rang {
+          margin-bottom: 15px;
+        }
+      }
     }
+
+
   }
+
+
 }
 
 @media screen and (max-width: 480px) {

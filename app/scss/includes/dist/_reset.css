@@ -217,3 +217,7 @@ section {
   color: #81868e;
   text-align: center;
 }
+
+.swiper-button-next {
+  right: 0;
+}
