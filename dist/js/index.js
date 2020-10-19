@@ -111,7 +111,7 @@ tabSkills.forEach(function (event) {
       text.classList.add('skills_active');
    });
 });
-<<<<<<< Updated upstream
+
 // ------------------------- Swipe slider -------------------------
 var mySwiper = new Swiper('.swiper-container', {
    slidesPerView: 1,
@@ -149,18 +149,9 @@ for(let i = 0; i <arr.length-1; i++){
       maxSum = Math.max(maxSum, sumFixedStart);
    }
 }
-<<<<<<< HEAD
 return maxSum;
 }
  
 // alert (getMaxSubSum(array));
 alert (getMaxSubSum([2, -1, 2, 3, -9]));
-=======
 
-alert(truncate(string, 20));
-alert(truncate(string, 10));
-alert(truncate(string, 50));
-=======
-
->>>>>>> Stashed changes
->>>>>>> a9d579bc999c5293e5faca4475aa944bb0fdbd07

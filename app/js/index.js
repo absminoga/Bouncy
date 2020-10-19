@@ -111,7 +111,7 @@ tabSkills.forEach(function (event) {
       text.classList.add('skills_active');
    });
 });
-<<<<<<< Updated upstream
+
 // ------------------------- Swipe slider -------------------------
 var mySwiper = new Swiper('.swiper-container', {
    slidesPerView: 1,
