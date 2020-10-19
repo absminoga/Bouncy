@@ -164,12 +164,22 @@ var mySwiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev'
   }
 });
-var string = "Вот, что мне хотелось бы сказать на эту тему:";
+var array = [1, -2, 3, 4, -9, 6];
 
-function truncate(str, maxlength) {
-  return str.length > maxlength ? str.slice(0, maxlength - 1) + "\u2026" : str;
-}
+function getMaxSubSum(arr) {
+  var maxSum = 0;
 
-alert(truncate(string, 20));
-alert(truncate(string, 10));
-alert(truncate(string, 50));
+  for (var i = 0; i < arr.length - 1; i++) {
+    var sumFixedStart = 0;
+
+    for (var j = i; j < arr.length - 1; j++) {
+      sumFixedStart += arr[j];
+      maxSum = Math.max(maxSum, sumFixedStart);
+    }
+  }
+
+  return maxSum;
+} // alert (getMaxSubSum(array));
+
+
+alert(getMaxSubSum([2, -1, 2, 3, -9]));

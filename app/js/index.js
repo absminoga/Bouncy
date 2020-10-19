@@ -137,13 +137,19 @@ var mySwiper = new Swiper('.swiper-container', {
 });
 
 
-let string = "Вот, что мне хотелось бы сказать на эту тему:";
+let array =  [1, -2, 3, 4, -9, 6];
 
-function truncate(str, maxlength) {
-   return (str.length > maxlength) ? str.slice(0, maxlength - 1) + "\u2026" : str;
-
+function getMaxSubSum(arr){
+let maxSum = 0;
+for(let i = 0; i <arr.length-1; i++){
+   let sumFixedStart= 0;
+   for(let j=i; j < arr.length-1; j++ ){
+      sumFixedStart +=arr[j];
+      maxSum = Math.max(maxSum, sumFixedStart);
+   }
 }
-
-alert(truncate(string, 20));
-alert(truncate(string, 10));
-alert(truncate(string, 50));
+return maxSum;
+}
+ 
+// alert (getMaxSubSum(array));
+alert (getMaxSubSum([2, -1, 2, 3, -9]));
