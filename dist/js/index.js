@@ -111,6 +111,7 @@ tabSkills.forEach(function (event) {
       text.classList.add('skills_active');
    });
 });
+<<<<<<< Updated upstream
 // ------------------------- Swipe slider -------------------------
 var mySwiper = new Swiper('.swiper-container', {
    slidesPerView: 1,
@@ -147,3 +148,6 @@ function truncate(str, maxlength) {
 alert(truncate(string, 20));
 alert(truncate(string, 10));
 alert(truncate(string, 50));
+=======
+
+>>>>>>> Stashed changes
