@@ -138,20 +138,3 @@ var mySwiper = new Swiper('.swiper-container', {
 });
 
 
-let array =  [1, -2, 3, 4, -9, 6];
-
-function getMaxSubSum(arr){
-let maxSum = 0;
-for(let i = 0; i <arr.length-1; i++){
-   let sumFixedStart= 0;
-   for(let j=i; j < arr.length-1; j++ ){
-      sumFixedStart +=arr[j];
-      maxSum = Math.max(maxSum, sumFixedStart);
-   }
-}
-return maxSum;
-}
- 
-// alert (getMaxSubSum(array));
-alert (getMaxSubSum([2, -1, 2, 3, -9]));
-
