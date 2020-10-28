@@ -2,33 +2,33 @@
 
 header {
    position: fixed;
-   top     : 0;
-   width   : 100%;
-   z-index : 9999;
+   top: 0;
+   width: 100%;
+   z-index: 9999;
 
    .container {
-      position       : relative;
-      max-width      : unset;
+      position: relative;
+      max-width: unset;
       justify-content: center;
-      align-items    : center;
-      z-index        : 999;
+      align-items: center;
+      z-index: 999;
    }
 }
 
 .main-header {
-   position       : relative;
-   display        : flex;
-   flex-direction : row;
+   position: relative;
+   display: flex;
+   flex-direction: row;
    justify-content: space-between;
-   align-items    : center;
-   flex-wrap      : wrap;
-   width          : 100%;
-   max-width      : $maxWidth;
-   height         : 110px;
-   z-index        : 999;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+   max-width: $maxWidth;
+   height: 110px;
+   z-index: 999;
 
    .main-header-nav {
-      display       : flex;
+      display: flex;
       flex-direction: row;
    }
 
@@ -50,17 +50,17 @@ header {
 }
 
 .main-header-logo {
-   cursor     : pointer;
+   cursor: pointer;
    font-family: BigJohn;
-   font-size  : calc(30px + 0.5vw);
+   font-size: calc(30px + 0.5vmin);
 
    a {
-      display   : block;
-      color     : $white-color;
+      display: block;
+      color: $white-color;
       transition: all 0.5s ease-in-out;
 
       &:hover {
-         color    : $orange;
+         color: $orange;
          transform: scale(1.1);
       }
    }
@@ -72,14 +72,14 @@ header {
    }
 
    a {
-      display      : block;
-      padding      : 8px 10px;
-      border       : 1px solid transparent;
+      display: block;
+      padding: 8px 10px;
+      border: 1px solid transparent;
       border-radius: 20px;
-      font-family  : OpenRegular;
-      font-size    : calc(16px + 0.2vw);
-      color        : $white-color;
-      transition   : border .7s ease-in-out;
+      font-family: OpenRegular;
+      font-size: calc(16px + 0.2vmin);
+      color: $white-color;
+      transition: border 0.7s ease-in-out;
 
       &:hover {
          border: 1px solid $white-color;

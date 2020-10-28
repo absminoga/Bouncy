@@ -20,7 +20,6 @@
 }
 
 .block_portfolio {
-
    .block_portfolio_tabs,
    .block_portfolio_cards {
       flex: 1 1 100%;
@@ -28,7 +27,6 @@
 
    .block_portfolio_tabs {
       .portfolio_list {
-
          display: flex;
          flex-direction: row;
          justify-content: center;
@@ -40,13 +38,12 @@
             cursor: pointer;
 
             font: {
-               family: 'OpenRegular';
-               size: calc(16px + 0.2vw);
+               family: "OpenRegular";
+               size: calc(16px + 0.2vmin);
             }
 
-            padding : 15px;
+            padding: 15px;
             padding-bottom: 10px;
-
          }
 
          .active {
@@ -54,7 +51,7 @@
             color: rgb(25, 189, 154);
 
             &:after {
-               content: '';
+               content: "";
                width: 38px;
                height: 2px;
                background-color: rgb(25, 189, 154);
@@ -63,7 +60,6 @@
                left: calc(50% - 19px);
             }
          }
-
       }
    }
 }
@@ -73,7 +69,6 @@
    grid-template-columns: repeat(4, calc(25% - 5px));
    grid-template-rows: repeat(10, 10vh);
    grid-gap: 5px;
-
 
    .portfolio_card {
       position: relative;
@@ -158,10 +153,8 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      padding: calc(10px + 0.6vw);
+      padding: calc(10px + 0.6vmin);
    }
-
-
 }
 
 .visually_hidden {
@@ -178,14 +171,13 @@
 
    .visually_hidden_title {
       font: {
-         family: 'SourceLight';
-         size: calc(14px + 0.6vw);
+         family: "SourceLight";
+         size: calc(14px + 0.6vmin);
       }
 
-      color : rgba(25, 189, 154, 1);
-      text-transform : uppercase;
-      margin-bottom : calc(10px + 0.8px);
-
+      color: rgba(25, 189, 154, 1);
+      text-transform: uppercase;
+      margin-bottom: calc(10px + 0.8px);
 
       &:after {
          content: " ";
@@ -200,15 +192,15 @@
 
    .visually_hidden_subtitle {
       font: {
-         family: 'OpenRegular';
-         size: calc(8px + 0.6vw);
+         family: "OpenRegular";
+         size: calc(8px + 0.6vmin);
       }
 
-      color : rgba(178, 179, 179, 1);
-      white-space : nowrap;
-      overflow : hidden;
-      text-overflow : ellipsis;
-      margin-bottom : calc(10px + 0.8px);
+      color: rgba(178, 179, 179, 1);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: calc(10px + 0.8px);
    }
 
    .visually_hidden_links {
@@ -230,18 +222,15 @@
             align-items: center;
             color: rgba(255, 255, 255, 1);
             transition: all 0.5s linear;
-
          }
 
          &:hover {
             a {
-               background-color: rgba(0, 0, 0, .5);
+               background-color: rgba(0, 0, 0, 0.5);
                color: rgb(25, 189, 154);
             }
          }
-
       }
-
    }
 
    &:hover {

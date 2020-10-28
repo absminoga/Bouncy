@@ -1,0 +1,59 @@
+/* -------- Section nine style ------------*/
+.section_nine {
+   position: relative;
+   .container {
+      z-index: 1;
+      .wrapper {
+         padding: calc(30px + 2vmin) 0;
+         .team_contact {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex-wrap: wrap;
+            .team_contact_title {
+               width: 100%;
+               text-align: center;
+               margin-bottom: calc(20px + 1vmin);
+               text-transform: capitalize;
+               font: {
+                  family: "OpenRegular";
+                  size: calc(16px + 0.5vmin);
+               }
+               color: $white-color;
+            }
+            .team_contact_btn {
+               .talk_btn {
+                  padding: 10px calc(20px + 1vmin);
+                  text-transform: capitalize;
+                  font: {
+                     family: "OpenRegular";
+                     size: calc(12px + 0.3vmin);
+                  }
+                  color: $white-color;
+                  cursor: pointer;
+                  border: 1px solid $white-color;
+                  border-radius: 20px;
+                  transition: all 0.6s linear;
+                  &:hover {
+                     color: rgba(25, 189, 154, 1);
+                     background-color: $white-color;
+                     border-color: rgba(25, 189, 154, 1);
+                  }
+               }
+            }
+         }
+      }
+   }
+   .team_contact_bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url(../img/section_eight/contact_bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: opacity(0.7);
+      z-index: -1;
+   }
+}

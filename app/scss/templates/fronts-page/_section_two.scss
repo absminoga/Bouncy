@@ -1,79 +1,78 @@
 /* -------- Section Two style ------------*/
 
 .aboute_columns {
-   display        : flex;
-   flex-direction : row;
-   flex-wrap      : wrap;
-   align-items    : center;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
    justify-content: flex-start;
-
 
    .about_title {
       font: {
          family: SourceLight;
-         size  : calc(16px + 0.34vw);
+         size: calc(16px + 0.34vmin);
       }
 
       text-transform: uppercase;
-      color         : rgba(51, 59, 70, 1);
-      margin-bottom :calc(30px + 1.5vw);
+      color: rgba(51, 59, 70, 1);
+      margin-bottom: calc(30px + 1.5vmin);
    }
 
    .about_text {
-      font-family  : OpenRegular;
-      font-size    : 14px;
-      line-height  : 2;
-      margin-bottom: calc(30px + 1.5vw);
-      color        : rgba(129, 134, 142, 1);
+      font-family: OpenRegular;
+      font-size: 14px;
+      line-height: 2;
+      margin-bottom: calc(30px + 1.5vmin);
+      color: rgba(129, 134, 142, 1);
    }
 
    img {
-      width : 100%;
+      width: 100%;
       height: auto;
    }
 }
 
 .aboute_columns:first-child {
-   flex        : 1 1 60%;
-   padding-left: calc(50px + 8vw);
+   flex: 1 1 60%;
+   padding-left: calc(50px + 8vmin);
 }
 
 .aboute_columns:last-child {
-   flex        : 1 1 40%;
-   padding-left: calc(50px + 6vw);
+   flex: 1 1 40%;
+   padding-left: calc(50px + 6vmin);
 }
 
 .about_btn {
-   position     : relative;
+   position: relative;
    border-radius: 20px;
-   overflow     : hidden;
-   z-index      : 0;
+   overflow: hidden;
+   z-index: 0;
 
    .btn_bg {
-      position        : absolute;
-      width           : 200px;
-      height          : 100px;
+      position: absolute;
+      width: 200px;
+      height: 100px;
       background-color: rgba(25, 189, 154, 1);
-      transform       : translate(-200px, -70px);
-      transition      : transform 0.6s linear;
-      z-index         : -1;
+      transform: translate(-200px, -70px);
+      transition: transform 0.6s linear;
+      z-index: -1;
    }
 
    a {
-      display       : block;
-      padding       : 10px calc(20px + 0.8vw);
-      border        : 1px solid rgba(51, 59, 70, 1);
-      border-radius : 20px;
-      color         : rgba(51, 59, 70, 1);
-      cursor        : pointer;
-      transition    : color 0.8s linear;
+      display: block;
+      padding: 10px calc(20px + 0.8vmin);
+      border: 1px solid rgba(51, 59, 70, 1);
+      border-radius: 20px;
+      color: rgba(51, 59, 70, 1);
+      cursor: pointer;
+      transition: color 0.8s linear;
       text-transform: capitalize;
 
       &:hover {
          color: $white-color;
       }
 
-      &:hover+.btn_bg {
+      &:hover + .btn_bg {
          transform: translate(-50px, -70px);
       }
    }

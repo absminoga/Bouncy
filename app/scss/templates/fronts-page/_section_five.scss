@@ -3,19 +3,19 @@
    background-color: rgba(243, 243, 243, 1);
 
    .services {
-      display        : flex;
-      flex-direction : row;
+      display: flex;
+      flex-direction: row;
       justify-content: center;
-      align-items    : center;
-      flex-wrap      : wrap;
-      width          : 100%;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
    }
 }
 
 .services {
    .services-block-skills {
-      flex   : 1 1 auto;
-      width  : 100%;
+      flex: 1 1 auto;
+      width: 100%;
       display: flex;
 
       .block_skills {
@@ -25,39 +25,39 @@
 }
 
 .skills_left {
-   display        : flex;
-   flex-direction : row;
-   align-items    : stretch;
+   display: flex;
+   flex-direction: row;
+   align-items: stretch;
    justify-content: flex-start;
 
    .block_skills_left_tabs {
-      display        : flex;
-      flex-direction : row;
-      align-items    : center;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       justify-content: space-between;
-      flex-wrap      : wrap;
-      width          : 53px;
+      flex-wrap: wrap;
+      width: 53px;
 
       div {
-         display         : flex;
-         flex-direction  : row;
-         justify-content : center;
-         align-items     : center;
-         padding         : 0 calc(12px + 0.3vw);
-         border-radius   : 50%;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         padding: 0 calc(12px + 0.3vmin);
+         border-radius: 50%;
          background-color: rgba(129, 134, 142, 1);
-         transition      : background-color .5s linear;
-         cursor          : pointer;
-         width           : 53px;
-         height          : 53px;
+         transition: background-color 0.5s linear;
+         cursor: pointer;
+         width: 53px;
+         height: 53px;
 
          &:not(:last-child) {
-            margin-bottom: calc(25px + 0.4vw);
+            margin-bottom: calc(25px + 0.4vmin);
          }
 
          i {
-            font-size: calc(16px + 1vw);
-            color    : $white-color;
+            font-size: calc(12px + 1vmin);
+            color: $white-color;
          }
       }
 
@@ -67,36 +67,36 @@
    }
 
    .block_skills_tab_content {
-      display    : flex;
+      display: flex;
       align-items: stretch;
    }
 
    .block_skills_text {
-      display       : none;
+      display: none;
       flex-direction: row;
-      align-items   : flex-start;
-      flex-wrap     : wrap;
-      width         : 100%;
-      padding       : 20px;
-      margin-top    : -1px;
-      text-align    : justify;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 20px;
+      margin-top: -1px;
+      text-align: justify;
 
       .skills__title {
          flex: 1 1 100%;
 
          font: {
             family: OpenRegular;
-            size  : calc(16px + 0.4vw);
+            size: calc(16px + 0.4vmin);
          }
 
-         text-transform : capitalize;
-         color          : rgba(70, 70, 70, 1);
-         padding        : 0 calc(20px + 1.6vw);
+         text-transform: capitalize;
+         color: rgba(70, 70, 70, 1);
+         padding: 0 calc(20px + 1.6vmin);
       }
 
       .skills_text {
-         padding    : 0 calc(20px + 1.6vw);
-         color      : rgba(129, 134, 142, 1);
+         padding: 0 calc(20px + 1.6vmin);
+         color: rgba(129, 134, 142, 1);
          line-height: 1.7;
 
          &:nth-child(2) {
@@ -104,10 +104,10 @@
 
             font: {
                family: OpenRegular;
-               size  : 16px;
+               size: 16px;
             }
 
-            margin-bottom : 10px;
+            margin-bottom: 10px;
          }
 
          &:last-child {
@@ -115,7 +115,7 @@
 
             font: {
                family: OpenRegular;
-               size  : 14px;
+               size: 14px;
             }
          }
       }
@@ -126,58 +126,56 @@
    }
 }
 
-
 .skills_right {
-   display        : flex;
-   flex-direction : row;
-   align-items    : center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
    justify-content: space-around;
 
    .progress-ring_block {
       position: relative;
 
       .progress-ring {
-         z-index      : 8;
-         margin-bottom: calc(16px + 0.2vw);
+         z-index: 8;
+         margin-bottom: calc(16px + 0.2vmin);
 
          .progress-ring__circle {
             transform-origin: center;
-            transform       : rotate(-270deg) rotateY(-180deg);
-            transition      : stroke-dashoffset 0.5s;
-
+            transform: rotate(-270deg) rotateY(-180deg);
+            transition: stroke-dashoffset 0.5s;
          }
       }
 
       .progress-ring__bg {
-         position     : absolute;
-         top          : 0;
-         left         : 0;
-         z-index      : -1;
+         position: absolute;
+         top: 0;
+         left: 0;
+         z-index: -1;
          border-radius: 50%;
       }
 
       span {
-         position : absolute;
-         display  : block;
-         top      : 50%;
-         left     : 50%;
+         position: absolute;
+         display: block;
+         top: 50%;
+         left: 50%;
          transform: translate(-50%, -125%);
 
          font: {
             family: OpenRegular;
-            size  : calc(20px + 0.6vw);
+            size: calc(20px + 0.6vmin);
          }
 
-         color: rgba(129, 134, 142, 1)
+         color: rgba(129, 134, 142, 1);
       }
 
       p {
          font: {
             family: RobotoLight;
-            size  : 16px;
+            size: 16px;
          }
 
-         color     : rgba(129, 134, 142, 1);
+         color: rgba(129, 134, 142, 1);
          text-align: center;
       }
    }

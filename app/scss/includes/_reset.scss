@@ -1,24 +1,22 @@
 //--------- LET variable ----------------
-$minWidth : 320px;
-$maxWidth : 1170px;
-$maxWidthContainer : 1370px;
+$minWidth: 320px;
+$maxWidth: 1170px;
+$maxWidthContainer: 1370px;
 // Accordion Height
-$a-height : calc(250px + 8vw);
+$a-height: calc(250px + 8vmin);
 
 // Position text along bottom
 $text-offset: $a-height - 90;
 
 // ------- LET Color ---------
-$black-color : rgba(0, 0, 0, 1);
-$white-color : rgba(255, 255, 255, 1);
-$red : rgba(255, 97, 0, 1);
+$black-color: rgba(0, 0, 0, 1);
+$white-color: rgba(255, 255, 255, 1);
+$red: rgba(255, 97, 0, 1);
 $yellow-color: rgba(242, 216, 0, 1);
-$grey-color : rgba(155, 155, 155, 1);
-$orange : rgba(255, 128, 0, 1);
+$grey-color: rgba(155, 155, 155, 1);
+$orange: rgba(255, 128, 0, 1);
 
 // --------- LET Hamburger Menu ----------
-
-
 
 html,
 body,
@@ -123,7 +121,6 @@ menu,
 nav,
 section {
   display: block;
-
 }
 
 html {
@@ -155,7 +152,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -207,7 +204,7 @@ input {
   flex-wrap: wrap;
   width: 100%;
   max-width: $maxWidth;
-  padding: calc(30px + 3.24vw) 0;
+  padding: calc(30px + 3.24vmin) 0;
   margin: 0 auto;
 }
 
@@ -231,12 +228,12 @@ section {
 
   font: {
     family: SourceLight;
-    size: calc(16px + 0.34vw);
+    size: calc(16px + 0.34vmin);
   }
 
-  color : rgba(51, 59, 70, 1);
+  color: rgba(51, 59, 70, 1);
   text-transform: uppercase;
-  margin-bottom :calc(20px + 1vw);
+  margin-bottom: calc(20px + 1vmin);
 }
 
 .section_description {
@@ -244,7 +241,7 @@ section {
   font-family: OpenRegular;
   font-size: 14px;
   line-height: 2;
-  margin-bottom: calc(20px + 1.5vw);
+  margin-bottom: calc(20px + 1.5vmin);
   color: rgba(129, 134, 142, 1);
   text-align: center;
 }

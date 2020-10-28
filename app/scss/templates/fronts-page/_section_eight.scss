@@ -26,9 +26,8 @@
       background-position: top center;
       padding-left: 20px;
 
-
       img {
-         max-height: calc(400px + 2vw);
+         max-height: calc(400px + 2vmin);
       }
    }
 
@@ -39,18 +38,18 @@
       justify-content: flex-end;
       align-items: stretch;
       flex-wrap: wrap;
-      padding: calc(20px + 1vw) calc(30px + 1vw);
+      padding: calc(20px + 1vmin) calc(30px + 1vmin);
 
       .member_item {
          width: 60%;
          text-align: end;
-         margin-bottom: calc(20px + 1vw);
+         margin-bottom: calc(20px + 1vmin);
       }
 
       .member_name {
          font: {
-            family: 'OpenRegular';
-            size: calc(16px + 0.5vw);
+            family: "OpenRegular";
+            size: calc(16px + 0.5vmin);
          }
 
          color: #464646;
@@ -58,7 +57,7 @@
 
       .member_position {
          font: {
-            family: 'SourceLight';
+            family: "SourceLight";
             style: italic;
          }
 
@@ -70,14 +69,12 @@
          width: 60%;
 
          font: {
-            family: 'OpenRegular';
+            family: "OpenRegular";
             size: 14px;
          }
 
          color: rgb(129, 134, 142);
          line-height: 1.79;
-
-
       }
 
       .member_skills {
@@ -100,18 +97,16 @@
             flex: 1 1 50%;
 
             font: {
-               family: 'SourceLight';
+               family: "SourceLight";
                size: 16px;
             }
 
-            color:rgb(129, 134, 142);
+            color: rgb(129, 134, 142);
          }
 
          .skill_text {
             text-align: left;
             text-transform: uppercase;
-
-
          }
 
          .skill_number {
@@ -125,7 +120,7 @@
          width: 100%;
          background-color: rgba(225, 228, 233, 1);
          height: 4px;
-         margin-bottom: calc(30px + 1vw);
+         margin-bottom: calc(30px + 1vmin);
 
          .skill_rang {
             position: absolute;
