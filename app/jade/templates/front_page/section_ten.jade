@@ -2,3 +2,33 @@
 section.section_ten(id='price')
    .container
       .wrapper.price
+         h2.price_title.section_title our price
+         .price_descripotion.section_description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+         .price_content.block_price
+            mixin price_card(plan, price)
+               article
+                  .price_cards
+                     .price_card_title.tariff_plan #{plan}
+                     .price_cards_description 
+                        div $ #{price}
+                        div per month
+                  .price_card_hidden
+                     .hidden_description
+                        div Full Branding
+                        div Project Management 
+                        div Unlimited Revisions
+                        div 24/7 h Service
+                        div Free Domain
+                        div Free Hosting
+                     .hidden_btn 
+                        a(href="" alt="let's go") let's start
+            +price_card("premium", "60")
+            +price_card("Ultra", "70")
+            +price_card("exclusive", "80")
+
+
+
+
+
+
+

@@ -540,7 +540,7 @@
 
 @media screen and (max-width: 320px) {
 }
-//
+//Height
 @media only screen and (max-height: 768px) {
   .block_portfolio_cards {
     grid-template-columns: repeat(4, calc(25% - 5px));

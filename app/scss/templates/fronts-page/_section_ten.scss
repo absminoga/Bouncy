@@ -1,1 +1,137 @@
 /* -------- Section ten style ------------*/
+.section_ten {
+   background-color: rgba(218, 215, 215, 1);
+}
+.price {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+   .block_price {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      article {
+         position: relative;
+         flex: 1 1 25%;
+         max-width: 250px;
+         min-width: 200px;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         margin: 0 5px;
+         margin-bottom: calc(20px + 1vmin);
+         background-color: $white-color;
+         transition: all 0.5s linear;
+         box-shadow: 3px 5px 5px transparent;
+         .price_cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            .price_card_title {
+               width: 100%;
+               text-align: center;
+               padding: calc(16px + 1vmin) 10px;
+               text-transform: uppercase;
+               background-color: rgba(25, 189, 154, 1);
+               font: {
+                  family: "OpenBold";
+                  size: calc(16px + 1vmin);
+               }
+
+               color: $white-color;
+            }
+            .price_cards_description {
+               width: 100%;
+               text-align: center;
+               padding: calc(55px + 1vmin);
+               div:first-child {
+                  font: {
+                     family: "SourceBlack";
+                     size: calc(30px + 1vmin);
+                  }
+                  margin-bottom: 5px;
+                  color: rgb(31, 187, 166);
+               }
+               div:last-child {
+                  font-size: calc(16px + 0.3vmin);
+                  margin-bottom: 5px;
+                  text-transform: capitalize;
+                  color: #81868e;
+               }
+            }
+         }
+         .price_card_hidden {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: all 0.5s linear;
+            z-index: 2;
+            .hidden_description {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               height: 80%;
+               width: 100%;
+               padding: calc(25px + 1vmin);
+               background-color: $white-color;
+               color: #81868e;
+               font-size: 14px;
+               div {
+                  transition: color 0.5s ease-in-out;
+                  &:hover {
+                     color: $black-color;
+                  }
+               }
+            }
+            .hidden_btn {
+               padding: calc(15px + 0.5vmin) 0;
+               background-color: rgba(25, 189, 154, 1);
+               text-transform: capitalize;
+               text-align: center;
+               width: 100%;
+               height: 20%;
+               transition: color 0.5s linear;
+               a {
+                  color: $white-color;
+                  transition: color 0.5s linear;
+                  &:after {
+                     content: ">";
+                     margin-left: 15px;
+                     color: $white-color;
+                     transition: color 0.5s linear;
+                  }
+               }
+
+               &:hover {
+                  a,
+                  a:after {
+                     color: $black-color;
+                  }
+               }
+            }
+            &:hover {
+               opacity: 1;
+            }
+         }
+         &:hover {
+            box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.5);
+         }
+      }
+   }
+}
