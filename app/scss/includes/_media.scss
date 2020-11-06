@@ -134,6 +134,20 @@
       background-color: $white-color;
     }
   }
+
+  /*--------Section Twelve --------- */
+  .field_form {
+    .field_form_input {
+      .feedback_name {
+        width: 100%;
+        max-width: unset;
+      }
+      .feedback_email,
+      .feedback_phone {
+        max-width: 45%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -236,6 +250,18 @@
         .block_skills_text.skills_active {
           display: flex;
         }
+      }
+    }
+  }
+
+  // ----- Section Twelve
+  .field_form {
+    .field_form_input {
+      .feedback_name,
+      .feedback_email,
+      .feedback_phone {
+        width: 1000%;
+        max-width: unset;
       }
     }
   }
@@ -454,6 +480,10 @@
         }
       }
     }
+  }
+  //Section eleven
+  .contact_card:last-child {
+    margin-bottom: 0;
   }
 }
 

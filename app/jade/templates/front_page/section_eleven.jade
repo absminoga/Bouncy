@@ -1,0 +1,23 @@
+//---------------- Section Eleven ------------
+section.section_eleven(id='contact')
+   .container
+      .wrapper.contact
+         h2.contact_title.section_title contact us
+         .contact_descripotion.section_description At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+         .contact_content.block_contact
+            mixin contact_card(imageName,  logoWeight, logo, contactTitle, strTop, linkAlt, strTopSrc, strBottom, strBottomSrc, target)
+               article.contact_card
+                  .contact_card_top.card_top(style="background: url(img/section_eleven/#{imageName}.jpg) center" alt="contact_logo")
+                     i(class="#{logoWeight} #{logo}").card_top_logo
+                  .contact_card_bottom.card_bottom
+                     .card_bottom_title.bottom_string #{contactTitle}
+                     .card_bottom_description.bottom_string.card_description
+                        .card_description_top
+                           a(href="#{strTopSrc}" alt="#{linkAlt}" target="#{target}") #{strTop}
+                        .card_description_bottom
+                           a(href="#{strBottomSrc}" alt="#{linkAlt}" target="_blank") #{strBottom}
+
+            +contact_card("email","far", "fa-envelope", "email", "hello@codecafe.com", "email", "mailto:nowhere@mozilla.org", "Personal@codecafe.com", "mailto:Personal@codecafe.com", "_self")
+            +contact_card("office","fas", "fa-map-marker-alt", "our office", "240 Bhatikhana, 8200 Barisal", "text", "https://www.google.com/maps/search/Bhatikhana,+8200+Barisal/@22.704889,90.3403419,13z", "Bangladesh", "https://www.google.com/maps/@23.4905805,88.1000848,7z", "_blank")
+            +contact_card("phone","fas", "fa-phone-alt", "phone", "+38 (067) 123-45-45", "phone", "tel:+491570156", "+38 (067) 123-45-67", "tel:+491570156", "_self")
+

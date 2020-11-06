@@ -14,6 +14,9 @@ class Bounce {
 
       this.circle = document.querySelectorAll(".progress-ring__circle");
 
+      this.form = document.querySelector(".field_form");
+      this.formBtn = this.form.querySelector(".form_btn")
+
       window.onscroll = () => {
          this.heightHeader();
          this.progressRing();
@@ -24,6 +27,8 @@ class Bounce {
          this.addHamburgerMenu();
          this.scrollBlocking();
       }
+
+      this.formBtn.onclick = () => this.validationForm();
    }
 
    // -------------- Hamburger Menu -----------
@@ -73,6 +78,14 @@ class Bounce {
             circle.style.strokeDashoffset = offset
          }
       })
+   }
+
+   //------------------ Validation Form
+   validationForm() {
+      event.preventDefault()
+      let name = this.form.getElementById('name');
+      let nameLabel = this.form.querySelector(".label_name");
+      console.log(name.value)
    }
 };
 let bounce = new Bounce();
