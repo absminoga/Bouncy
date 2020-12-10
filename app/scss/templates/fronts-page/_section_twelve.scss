@@ -9,6 +9,7 @@
       width: 100%;
       .input_block {
          position: relative;
+         overflow: hidden;
          label {
             position: absolute;
             top: 11px;
@@ -17,7 +18,10 @@
                family: "OpenSans";
                size: calc(12px + 0.5vmin);
             }
-            color: rgb(169, 169, 169);
+            color: rgb(100, 100, 100);
+         }
+         .label_hidden {
+            left: -100px;
          }
          .entry_field {
             width: 100%;
@@ -26,7 +30,7 @@
                family: "OpenSans";
                size: calc(12px + 0.5vmin);
             }
-            color: rgb(169, 169, 169);
+            color: rgb(63, 63, 63);
             border: 1px solid rgb(169, 169, 169);
             padding: 8px 20px;
          }
@@ -64,10 +68,14 @@
       margin-bottom: calc(20px + 1vw);
       textarea {
          width: 100%;
-         color: rgb(169, 169, 169);
+         color: rgb(69, 69, 69);
          border: 1px solid rgb(169, 169, 169);
          padding: 8px 20px;
          resize: none;
+         font: {
+            family: "OpenSans";
+            size: calc(12px + 0.5vmin);
+         }
       }
    }
    .form_btn {

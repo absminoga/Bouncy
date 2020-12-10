@@ -15,7 +15,7 @@ class Bounce {
       this.circle = document.querySelectorAll(".progress-ring__circle");
 
       this.form = document.querySelector(".field_form");
-      this.formBtn = this.form.querySelector(".form_btn")
+      this.formBtn = this.form.querySelector(".form_btn");
 
       window.onscroll = () => {
          this.heightHeader();
@@ -23,12 +23,9 @@ class Bounce {
       }
 
       this.headlineBtn.onclick = () => this.autoScroll();
-      this.hamburgerBtn.onclick = () => {
-         this.addHamburgerMenu();
-         this.scrollBlocking();
-      }
+      this.hamburgerBtn.onclick = () => this.addHamburgerMenu();
 
-      this.formBtn.onclick = () => this.validationForm();
+      this.formBtn.onclick = (a) => this.validationForm();
    }
 
    // -------------- Hamburger Menu -----------
@@ -40,10 +37,6 @@ class Bounce {
             setTimeout(() => this.hamburgerMenu.classList.remove('hamburger-list--active'), 500);
          }
       }
-   }
-   // -------------- Scroll Blocking -----------
-   scrollBlocking() {
-
    }
 
    // ----------------- Height and background header -------------
@@ -80,13 +73,16 @@ class Bounce {
       })
    }
 
+
+
    //------------------ Validation Form
    validationForm() {
       event.preventDefault()
-      let name = this.form.getElementById('name');
+      let name = this.form.querySelector('.field_name');
       let nameLabel = this.form.querySelector(".label_name");
-      console.log(name.value)
    }
+
+
 };
 let bounce = new Bounce();
 
@@ -124,6 +120,28 @@ tabSkills.forEach(function (event) {
       text.classList.add('skills_active');
    });
 });
+// ------------------ Form -------------------------------
+//------------------ Hide Label of change
+let entryField = document.querySelectorAll('.entry_field');
+entryField.forEach(function (e) {
+   e.addEventListener('input', function () {
+      let idElement = e.id;
+      let labelField = document.querySelector(`.label_${idElement}`);
+      e.onchange = () => {
+         (e.value.length === 0) ? removeLabel() : setLabel()
+      };
+
+      function removeLabel() {
+         console.log(labelField);
+         labelField.classList.remove("label_hidden");
+      };
+      function setLabel() {
+         console.log(labelField);
+         labelField.classList.add("label_hidden");
+      };
+   });
+});
+
 
 // ------------------------- Swipe slider -------------------------
 var mySwiper = new Swiper('.swiper-container', {

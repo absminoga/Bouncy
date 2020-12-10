@@ -2277,7 +2277,8 @@ header {
           flex-wrap: wrap;
   width: 100%; }
   .feedback form .input_block {
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .feedback form .input_block label {
       position: absolute;
       top: 11px;
@@ -2285,14 +2286,16 @@ header {
       font-family: "OpenSans";
       font-size: -webkit-calc(12px + 0.5vmin);
       font-size: calc(12px + 0.5vmin);
-      color: darkgray; }
+      color: #646464; }
+    .feedback form .input_block .label_hidden {
+      left: -100px; }
     .feedback form .input_block .entry_field {
       width: 100%;
       height: 100%;
       font-family: "OpenSans";
       font-size: -webkit-calc(12px + 0.5vmin);
       font-size: calc(12px + 0.5vmin);
-      color: darkgray;
+      color: #3f3f3f;
       border: 1px solid darkgray;
       padding: 8px 20px; }
 
@@ -2348,10 +2351,13 @@ header {
     margin-bottom: calc(20px + 1vw); }
     .field_form .feedback_textarea textarea {
       width: 100%;
-      color: darkgray;
+      color: #454545;
       border: 1px solid darkgray;
       padding: 8px 20px;
-      resize: none; }
+      resize: none;
+      font-family: "OpenSans";
+      font-size: -webkit-calc(12px + 0.5vmin);
+      font-size: calc(12px + 0.5vmin); }
   .field_form .form_btn {
     width: 100%;
     text-align: center;
