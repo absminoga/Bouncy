@@ -1,0 +1,39 @@
+/* -------- Section twelve style ------------*/
+.section_thirteen {
+   position: relative;
+   z-index: 0;
+}
+.section_thirteen:hover .map_bg {
+   left: -2000px;
+   opacity: 0;
+}
+.map_field {
+   width: 100%;
+   height: calc(300px + 10vw);
+   iframe {
+      width: 100%;
+      height: 100%;
+   }
+   z-index: 1;
+}
+.map_bg {
+   position: absolute;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: calc(300px + 10vw);
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 2;
+   transition: all 0.8s linear;
+   top: 0;
+   left: 0;
+   .map_bg_title {
+      font: {
+         size: calc(16px + 0.6vw);
+         family: SourceBlack;
+      }
+      color: white;
+   }
+}

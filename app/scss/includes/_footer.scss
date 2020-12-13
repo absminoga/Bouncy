@@ -1,0 +1,60 @@
+.footer {
+   background-color: rgb(243, 243, 243);
+   .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-content: stretch;
+   }
+   .footer_row {
+      margin-bottom: calc(10px + 1vw);
+   }
+   .footer_title {
+      cursor: pointer;
+      font-family: BigJohn;
+      font-size: calc(15px + 0.5vmin);
+      color: rgb(50, 58, 69);
+   }
+   .footer_copyright {
+      color: rgb(129, 134, 142);
+      font: {
+         size: calc(12px + 0.2vmin);
+         family: OpenRegular;
+      }
+   }
+   .footer_link_social {
+      display: flex;
+      flex-direction: row;
+      a {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 26px;
+         height: 26px;
+         cursor: pointer;
+         border-radius: 20px;
+         color: white;
+         background-color: rgb(129, 134, 142);
+         font-size: 14px;
+      }
+      a:not(:last-child) {
+         margin-right: 15px;
+      }
+      a:first-child {
+         background-color: rgb(59, 89, 152);
+      }
+      a:nth-child(2) {
+         background-color: rgb(38, 166, 209);
+      }
+      a:nth-child(3) {
+         background-color: rgb(14, 118, 168);
+      }
+      a:nth-child(4) {
+         background-color: rgb(63, 114, 155);
+      }
+      a:last-child {
+         background-color: rgb(134, 201, 239);
+      }
+   }
+}

@@ -5,6 +5,7 @@ header {
    top: 0;
    width: 100%;
    z-index: 9999;
+   transition: all 1s ease-in-out;
 
    .container {
       position: relative;
