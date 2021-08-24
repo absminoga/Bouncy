@@ -178,3 +178,43 @@ var mySwiper = new Swiper('.swiper-container', {
 });
 
 
+// let Person = function (name, surname) {
+//    this.surname = surname,
+//       this.name = name,
+//       this.greet = function () {
+//          console.log(`Hello, I am ${this.name}`);
+//          console.log(this.name);
+//       }
+// }
+// let person1 = new Person("Serhii", "Zubrin")
+
+
+// class Person1 {
+//    constructor(name, surname) {
+//       this.name = name;
+//       this.surname = surname;
+//    }
+
+//    sayHello() {
+
+//       let arrow = () => { console.log(this); }
+//       arrow()
+//       return `Hello, I am ${this.name}`;
+//    }
+// };
+
+// let sergii = new Person1('Serhii', 'Zubrin')
+// console.log(sergii);
+
+// console.log(sergii.sayHello());
+
+// let today = new Date();
+// console.log(today.getFullYear());
+let animal = {
+   eats: true
+}
+let rabbit = {
+   jump: true,
+   __proto__: animal
+}
+
